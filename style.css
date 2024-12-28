@@ -74,21 +74,72 @@ main{
     margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-    .productos {
-        grid-template-columns: repeat(2, 1fr); 
-    }
+.titulos{
+    margin: 3rem 5px 0 5px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.titleProd{
+    font-weight: bold;
 }
 
 
-@media (max-width: 480px) {
-    .productos {
-        grid-template-columns: 1fr; 
-    }
+.contenedorProductos{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+    grid-template-rows: auto; 
+    border: 0.5px solid #ccc;
+    margin: 0.5rem;
+    
 }
 
+.divApi{
+    background-color: #fff;
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column; 
+    padding: 1rem;
+}
 
+.imgApi{
+    width: 100%; 
+    height: 15rem; 
+    object-fit: cover; 
+    
+}
 
+.priceApi{
+    font-weight: bold;
+    
+}
+.titleApi{
+    max-width: 100%;
+    min-width: auto;
+    height: 3rem;
+    margin: 1rem 0;
+    font-weight: bold;
+    
+}
+
+.btnApi{
+    background-color: rgba(68, 151, 199, 1);
+    color: #fff;
+    width: max-content;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+.btnApi:hover{
+    background-color: rgb(56, 125, 165);
+}
 .reseñas {
     display: flex;
     flex-wrap: wrap;
@@ -96,7 +147,7 @@ main{
     padding: 20px;
     justify-content: center;
     border: 1px solid #ccc;
-    margin: 3rem 0;
+    margin:  0.5rem;
 }
 
 .reseña {
@@ -105,7 +156,7 @@ main{
     border-radius: 8px;
     padding: 15px;
     width: 100%;
-    max-width: 300px;
+    max-width: 280px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -121,7 +172,7 @@ main{
     .reseñas {
         justify-content: space-between;
     }
-
+    
     .reseña {
         width: 48%;
     }
@@ -193,7 +244,7 @@ main{
         padding: 15px;
         
     }
-
+    
     .titulo-form {
         font-size: 1.5em;
     }
@@ -204,8 +255,28 @@ main{
         width: 100%;
         padding: 10px;
     }
-
+    
     .titulo-form {
         font-size: 1.3em;
+    }
+}
+@media (max-width: 768px) {
+    .productos {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .contenedorProductos {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .productos {
+        grid-template-columns: 1fr; 
+    }
+
+    .contenedorProductos {
+        grid-template-columns: 1fr; 
     }
 }

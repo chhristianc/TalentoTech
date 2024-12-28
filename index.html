@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -22,6 +22,9 @@
             <a href="#productos">
                 <li class="li-el">Productos</li>
             </a>
+            <a href="#productosApi">
+                <li class="li-el">ProductosApi</li>
+            </a>
             <a href="#reseñas">
                 <li class="li-el">Reseñas</li>
             </a>
@@ -33,16 +36,15 @@
     </nav>
 
     <main>
-        
-        
-        <section class="productos" id="productos">
-
+        <p id="productos" class="titulos">Productos</p>
+        <section class="productos">
             <div class="producto">
                 <img src="img/producto-1.jpg" alt="pc escritorio" class="prod-img">
 
                 <div>
-                    <p>Nombre producto</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem fuga quidem inventore accusantium odio quo, aspernatur numquam, maiores mollitia explicabo sit eos nobis odit? Modi non magni rem tempore error?</p>
+                    <p class="titleProd">PC Escritorio</p>
+                    <p class="priceApi"> $500.000</p>
+                    <button class="btnApi">Agregar al carrito</button>
                 </div>
             </div> 
 
@@ -50,8 +52,9 @@
                 <img src="img/producto-2.jpg" alt="monitor" class="prod-img">
 
                 <div>
-                    <p>Nombre producto</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quidem blanditiis veniam quibusdam fugiat ullam qui corrupti fuga ut voluptatem, nam adipisci? Accusamus fugit veritatis beatae voluptatem nobis odit dicta.</p>
+                    <p class="titleProd">Monitor LG 20"</p>
+                    <p class="priceApi"> $200.000</p>
+                    <button class="btnApi">Agregar al carrito</button>
                 </div>
             </div>
 
@@ -59,8 +62,9 @@
                 <img src="img/producto-3.jpg" alt="placa de video" class="prod-img">
 
                 <div>
-                    <p>Nombre producto</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vero suscipit harum eveniet, sit molestias quae a consectetur cumque fugit illum odit debitis ab alias excepturi velit dignissimos assumenda unde!</p>
+                    <p class="titleProd">Placa de video</p>
+                    <p class="priceApi"> $300.000</p>
+                    <button class="btnApi">Agregar al carrito</button>                
                 </div>
             </div>
 
@@ -68,8 +72,9 @@
                 <img src="img/producto-4.jpg" alt="fuente" class="prod-img">
 
                 <div>
-                    <p>Nombre producto</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquam eaque sapiente dolor vitae id, optio voluptate voluptatum non iste voluptatem doloremque laboriosam quibusdam. Explicabo, vero? Aperiam maxime modi iste!</p>
+                    <p class="titleProd">Fuente Corsair</p>
+                    <p class="priceApi">$180.000</p>
+                    <button class="btnApi">Agregar al carrito</button>
                 </div>
             </div>
 
@@ -77,38 +82,41 @@
 
 
         </section>
+        <p id="productosApi" class="titulos">Productos API</p>
+        <div id="contenedorProductos" class="contenedorProductos"></div>
 
-        <section class="reseñas" id="reseñas">
+        <p id="reseñas" class="titulos">Reseñas</p>
+        <section class="reseñas">
             
             <div class="reseña">
                 <div>
-                    <p>Nombre reseña</p>
+                    <p class="titleApi">Reseña 1</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit odio asperiores optio molestias tempora ex aliquam, dolore autem maiores suscipit maxime itaque, modi laborum! Hic, error earum? Nobis, saepe. Nisi.</p>
-                    <p>5/5</p>
+                    <p class="titleApi">5/5</p>
                 </div>
             </div>
 
             <div class="reseña">
                 <div>
-                    <p>Nombre reseña</p>
+                    <p class="titleApi">Reseña 2</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit odio asperiores optio molestias tempora ex aliquam, dolore autem maiores suscipit maxime itaque, modi laborum! Hic, error earum? Nobis, saepe. Nisi.</p>
-                    <p>5/5</p>
+                    <p class="titleApi">5/5</p>
                 </div>
             </div>
 
             <div class="reseña">
                 <div>
-                    <p>Nombre reseña</p>
+                    <p class="titleApi">Reseña 3</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit odio asperiores optio molestias tempora ex aliquam, dolore autem maiores suscipit maxime itaque, modi laborum! Hic, error earum? Nobis, saepe. Nisi.</p>
-                    <p>5/5</p>
+                    <p class="titleApi">5/5</p>
                 </div>
             </div>
 
             <div class="reseña">
                 <div>
-                    <p>Nombre reseña</p>
+                    <p class="titleApi">Reseña 4</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit odio asperiores optio molestias tempora ex aliquam, dolore autem maiores suscipit maxime itaque, modi laborum! Hic, error earum? Nobis, saepe. Nisi.</p>
-                    <p>5/5</p>
+                    <p class="titleApi">5/5</p>
                 </div>
             </div>
         </section>
@@ -131,10 +139,12 @@
         </section>
 
 
+
     </main>
     <footer>
          <p class="footer-texto">TALENTO TECH</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
